@@ -1,17 +1,35 @@
-Generic Robot Framework library for asynchronous keyword execution
+RobotFramework AsyncLibrary
+=======================
+
+Short Description
+-----------------
+Generic Robot Framework library for asynchronous keyword execution originally modified by René Lehfeld.
 
 Installation
 ============
-If you have pip and git installed:
-``pip install git+https://github.com/rlehfeld/robotframework-async.git``
+Install the library from GitHub using pip:
+
+::
+
+    pip install "git+https://github.com/Quadrob/robotframework-async.git"
 
 Usage
 =====
+
 #) Import into a test suite with:
-    ``Library AsyncLibrary``
+
+.. code:: robotframework
+
+    Library AsyncLibrary
 
 #) To run a keyword asynchronously:
-    ``${handle}    Async Run    some keyword    first argument    second argument``
+
+.. code:: robotframework
+
+    ${handle}    Async Run    some keyword    first argument    second argument
 
 #) To retrieve the return value, a blocking call to async_get is called with the handle:
-    ``${return_value}    Async Get    ${handle}``
+
+.. code:: robotframework
+
+    ${return_value}    Async Get    ${handle}

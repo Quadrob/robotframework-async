@@ -2,15 +2,15 @@ from setuptools import setup
 
 setup(
     name = "robotframework-async",
-    version = "1.0.5.dev15",
-    description = "Generic Robot Framework library for asynchronous keyword execution",
+    version = "1.0.6",
+    description = "Generic Robot Framework library for asynchronous keyword execution originally modified by René Lehfeld.",
     author = "René Lehfeld",
     author_email = "54720674+rlehfeld@users.noreply.github.com",
     license = "MIT",
-    url = "https://github.com/rlehfeld/robotframework-async",
-    download_url = "https://github.com/rlehfeld/robotframework-async",
+    url = "https://github.com/Quadrob/robotframework-async",
+    download_url = "https://github.com/Quadrob/robotframework-async",
     keywords = ["async", "robotframework"],
-    install_requires = ["robotframework >= 6.0.2"],
+    install_requires = ["robotframework >= 5.0.1"],
     packages = ["AsyncLibrary"],
     classifiers = [
         "Programming Language :: Python",
